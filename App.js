@@ -21,13 +21,18 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+      <Text style={styles.welcome}>GEU ACM </Text>
         <SliderBox
           images={this.state.images}
           onCurrentImagePressed={index =>
             console.warn(`image ${index} pressed`)
           }
         />
-
+       <Text style={styles.bo1}>Forgot Password?</Text>
+        <Text style={styles.bo2}>Forgot Password?</Text>
+         <Text style={styles.bo3}>Forgot Password?</Text>
+          <Text style={styles.bo3}>Forgot Password?</Text>
+           <Text style={styles.bo4}>Forgot Password?</Text>
       </View>
     );
   }
@@ -36,5 +41,20 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1
-  }
+  } ,
+  welcome: {
+    fontSize: 30,
+    left: '30%' ,
+  } ,
+  bo1:{
+  color:"black",
+  fontSize:11 ,
+  alignItems:"center",
+  justifyContent:"center",
+  padding: 5 ,
+  height: 25 ,
+  borderColor: "pink" ,
+  borderWidth: 2 ,
+},
+
 });
