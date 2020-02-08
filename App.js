@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View ,AppRegistry, Dimensions } from "react-native";
 import { DrawerNavigator } from 'react-navigation';
 import FontAwesome, { Icons,IconTypes,parseIconName } from 'react-native-fontawesome';
+import LinearGradient from 'react-native-linear-gradient';
+
+
+
 
 
 
@@ -27,23 +31,58 @@ export default class App extends Component {
       <View style={styles.container}>
       <Text style={styles.welcome}>GEU ACM </Text>
         <SliderBox
-          images={this.state.images}        />
-  <View style={{flex: 1, flexDirection: 'row', borderWidth: 2 ,marginTop: '4%'}}>
-      <Text style={styles.squarebox}>about acm</Text>
-      <Text style={styles.squarebox}>about acm</Text>
+          images={this.state.images}/>
+  <View style={{flex: 1, flexDirection: 'row',marginTop: '4%'}}>
+  <LinearGradient
+    colors={['#F5FCFF', '#B7E9F7', '#7AD7F0']}
+    style={styles.squarebox}>
+      <Text>about acm</Text>
+        </LinearGradient>
+  <LinearGradient
+    colors={['#F5FCFF', '#B7E9F7', '#7AD7F0']}
+    style={styles.squarebox}>
+      <Text>about acm</Text>
+        </LinearGradient>
       </View>
-      <View style={{flex: 1, flexDirection: 'row', borderWidth: 2 ,marginTop: '5%'}}>
-          <Text style={styles.squarebox}>about acm</Text>
-          <Text style={styles.reactgularbox}>about acm</Text>
-            <Text style={styles.reactgularbox1}>about acm</Text>
+      <View style={{flex: 1, flexDirection: 'row',marginTop: '5%'}}>
+      <LinearGradient
+        colors={['#A7E7FE', '#F0FEFF', '#A0FFA0']}
+        style={styles.squarebox}>
+          <Text>about acm</Text>
+          </LinearGradient>
+          <LinearGradient
+            colors={['#A7E7FE', '#F0FEFF', '#A0FFA0']}
+            style={styles.reactgularbox}>
+              <Text>about acm</Text>
+              </LinearGradient>
+              <LinearGradient
+                colors={['#A7E7FE', '#F0FEFF', '#A0FFA0']}
+                style={styles.reactgularbox}>
+                  <Text>about acm</Text>
+                  </LinearGradient>
           </View>
-          <View style={{flex: 1, flexDirection: 'row', borderWidth: 2 ,marginTop: '4%'}}>
-              <Text style={styles.reactgularboxd}>about acm</Text>
-              <Text style={styles.reactgularbox1d}>about acm</Text>
-              <Text style={styles.reactgularboxd}>about acm</Text>
-              <Text style={styles.reactgularbox1d}>about acm</Text>
-
-              </View>
+          <View style={{flex: 1, flexDirection: 'row',marginTop: '4%'}}>
+          <LinearGradient
+            colors={['#B5FACB', '#F0F4DC', '#57C0F9']}
+            style={styles.reactgularbox1d}>
+              <Text>about acm</Text>
+              </LinearGradient>
+              <LinearGradient
+                colors={['#B5FACB', '#F0F4DC', '#57C0F9']}
+                style={styles.reactgularbox1d}>
+                  <Text>about acm</Text>
+                  </LinearGradient>
+                  <LinearGradient
+                    colors={['#B5FACB', '#F0F4DC', '#57C0F9']}
+                    style={styles.reactgularbox1d}>
+                      <Text>about acm</Text>
+                      </LinearGradient>
+                      <LinearGradient
+                        colors={['#B5FACB', '#F0F4DC', '#57C0F9']}
+                        style={styles.reactgularbox1d}>
+                          <Text>about acm</Text>
+                          </LinearGradient>
+            </View>
 
       </View>
     );
@@ -54,7 +93,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1 ,
     color: '#f3f3f3' ,
-    backgroundColor: '#D6FFFC',
   } ,
   welcome: {
     fontSize: 30,
@@ -66,7 +104,7 @@ const styles = StyleSheet.create({
   alignItems:"center",
   justifyContent:"center",
   padding: 30,
-  borderColor: "pink" ,
+  borderColor: "white" ,
   borderWidth: 2 ,
   width: '35%',
   height: '100%' ,
@@ -81,7 +119,7 @@ reactgularbox: {
   alignItems:"center",
   justifyContent:"center",
   padding: 5,
-  borderColor: "pink" ,
+  borderColor: "white" ,
   borderWidth: 2 ,
   width: '15%',
   height: '100%' ,
@@ -111,14 +149,13 @@ reactgularboxd: {
   alignItems:"center",
   justifyContent:"center",
   padding: 5,
-  borderColor: "pink" ,
   borderWidth: 2 ,
   width: '20%',
   height: '53%' ,
   borderRadius: 9,
   backgroundColor: '#9b59b6' ,
   textAlign: 'center',
-  marginLeft: '2%' ,
+  marginLeft: '3%' ,
 },
 reactgularbox1d: {
   color:"black",
@@ -126,14 +163,12 @@ reactgularbox1d: {
   alignItems:"center",
   justifyContent:"center",
   padding: 5,
-  borderColor: "pink" ,
-  borderWidth: 2 ,
   width: '20%',
   height: '53%' ,
   borderRadius: 9,
   backgroundColor: '#9b59b6' ,
   textAlign: 'center',
-  marginLeft: '2%' ,
+  marginLeft: '3.5%' ,
 },
 
 
