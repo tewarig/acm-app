@@ -54,10 +54,7 @@ const AppNavigator = createStackNavigator({
   ebook: {
     screen: ebook
   },
-  certificates:
-  {
-    screen: certi
-  },
+  
   workshop :{
     screen: workshop
   },

@@ -24,7 +24,7 @@ export default class workshop extends Component {
          onLoadStart={() => (this.showSpinner())}
          onLoad={() => this.hideSpinner()}
          style={{ flex: 1 }}
-         source={{ uri: 'https://noobtodev.com/coding' }}
+         source={{ uri: 'https://docs.google.com/forms/d/e/1FAIpQLScS7YjXaA5QTKY6DfqBWQd6VqtgeJRXpsxl5naRtohHVUUceg/viewform?usp=sf_link' }}
        />
        {this.state.visible && (
          <ActivityIndicator
