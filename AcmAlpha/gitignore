@@ -1,6 +1,6 @@
 node_modules
-certificates.js
-feedback.js
-study.js
+components/certificates.js
+components/feedback.js
+
 
 
