@@ -4,7 +4,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { WebView } from 'react-native-webview';
 
 
-export default class cert extends Component {
+export default class certificates extends Component {
   constructor(props) {
    super(props);
    this.state = { visible: true };
@@ -24,7 +24,7 @@ export default class cert extends Component {
          onLoadStart={() => (this.showSpinner())}
          onLoad={() => this.hideSpinner()}
          style={{ flex: 1 }}
-         source={{ uri: 'https://noobtodev.com/coding' }}
+         source={{ uri: 'https://tewarig.github.io/stuff/certificates.html' }}
        />
        {this.state.visible && (
          <ActivityIndicator

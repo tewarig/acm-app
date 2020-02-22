@@ -14,7 +14,7 @@ import feedback from './components/feedback';
 import clubic from './components/clubic';
 import notes from './components/notes';
 import ebook from './components/ebook';
-import cert from './components/cert';
+import certificates from './components/certificates';
 import workshop from './components/workshop';
 
 export default class App extends React.Component {
@@ -61,8 +61,8 @@ const AppNavigator = createStackNavigator({
   workshop :{
     screen: workshop
   },
-  cert:{
-    screen: cert
+  certificates:{
+    screen: certificates
   }
 
 

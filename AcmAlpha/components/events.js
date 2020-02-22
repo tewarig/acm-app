@@ -6,7 +6,7 @@ export default class events extends Component {
   render() {
     return (
       <View>
-    <TouchableHighlight onPress={() => this.props.navigation.navigate("cert")}>
+    <TouchableHighlight onPress={() => this.props.navigation.navigate("certificates")}>
             <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
             style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={3}
           >
