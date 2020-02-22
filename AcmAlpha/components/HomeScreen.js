@@ -50,7 +50,7 @@ export default class Homescreen extends Component {
                 <Text style ={styles.imgtext}>Learn coding</Text>
                 </ImageBackground>
                 </TouchableHighlight>
-                <TouchableHighlight onPress={() => navigation.navigate("Events")}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate("events")}>
                 <ImageBackground source={{uri: 'https://images.pexels.com/photos/953847/pexels-photo-953847.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
@@ -58,7 +58,7 @@ export default class Homescreen extends Component {
                 </ImageBackground>
               </TouchableHighlight>
 
-                <TouchableHighlight onPress={() => navigation.navigate("Feedback")}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate("feedback")}>
                 <ImageBackground source={{uri: 'https://images.pexels.com/photos/17845/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
@@ -67,7 +67,7 @@ export default class Homescreen extends Component {
               </TouchableHighlight>
 
 
-                <TouchableHighlight onPress={() => navigation.navigate("Clubs")}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate("Clubic")}>
                 <ImageBackground source={{uri: 'https://images.pexels.com/photos/953847/pexels-photo-953847.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
@@ -76,7 +76,7 @@ export default class Homescreen extends Component {
               </TouchableHighlight>
 
 
-                  <TouchableHighlight onPress={() => navigation.navigate("About")}>
+                  <TouchableHighlight onPress={() => this.props.navigation.navigate("About")}>
                 <ImageBackground source={{uri: 'https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >

@@ -5,11 +5,17 @@ import { createStackNavigator } from "react-navigation-stack" ;
 import { createAppContainer } from "react-navigation";
 
 import HomeScreen from './components/HomeScreen';
-import AboutScreen from './components/AboutScreen';
+import About from './components/About';
 import join from './components/join';
 import study from './components/study';
 import coding from './components/coding';
 import events from './components/events';
+import feedback from './components/feedback';
+import clubic from './components/clubic';
+import notes from './components/notes';
+import ebook from './components/ebook';
+import cert from './components/cert';
+import workshop from './components/workshop';
 
 export default class App extends React.Component {
   render() {
@@ -22,7 +28,7 @@ const AppNavigator = createStackNavigator({
     screen: HomeScreen  , },
 
   About: {
-    screen: AboutScreen
+    screen: About
   },
   join: {
     screen: join
@@ -36,6 +42,28 @@ const AppNavigator = createStackNavigator({
   events: {
     screen: events
   },
+  feedback: {
+    screen: feedback
+  },
+  clubs: {
+    screen: clubic
+  },
+  notes: {
+    screen: notes
+  },
+  ebook: {
+    screen: ebook
+  },
+  certificates:
+  {
+    screen: certi
+  },
+  workshop :{
+    screen: workshop
+  },
+  cert:{
+    screen: cert
+  }
 
 
 });

@@ -1,27 +1,28 @@
 import React, { Component } from 'react';
-import { StyleSheet ,Button, View, Text,TouchableHighlight ,ImageBackground } from 'react-native';
+import { StyleSheet ,Button, View, Text,TouchableHighlight ,ImageBackground, Image } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-export default class events extends Component {
+export default class About extends Component {
   render() {
     return (
-      <View>
-    <TouchableHighlight onPress={() => this.props.navigation.navigate("cert")}>
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
-            style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={3}
-          >
-            <Text style ={styles.imgtext}>Event Certificates</Text>
-            </ImageBackground>
-            </TouchableHighlight>
-            <TouchableHighlight onPress={() => this.props.navigation.navigate("workshop")}>
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
-            style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
-          >
-            <Text style ={styles.imgtext}>Request a Workshop/Event</Text>
-            </ImageBackground>
-            </TouchableHighlight>
-            </View>
-    )
+   <View>
+   <TouchableHighlight onPress={() => navigation.navigate("Soon")}>
+     {/* onPress={this.}>  */}
+         <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
+         style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={3}
+       >
+         <Text style ={styles.imgtext}>Geu Acm Team</Text>
+         </ImageBackground>
+         </TouchableHighlight>
+         <View>
+        <Text style={{marginTop:'134%' , marginLeft:'29%'}}>
+         Proudly Build on  <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+         style={{width: 20, height: 30 ,borderRadius: 25}} />
+
+         </Text>
+         </View>
+  </View>
+    );
   }
 }
 const styles = StyleSheet.create({

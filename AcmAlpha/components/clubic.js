@@ -1,32 +1,36 @@
-import React, { Component } from 'react';
-import { StyleSheet ,Button, View, Text,TouchableHighlight ,ImageBackground } from 'react-native';
+import react , {Component}from 'react';
+import {StyleSheet , Image ,ImageBackground ,TouchableHighlight  } from 'react-native' ;
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-export default class events extends Component {
-  render() {
-    return (
+export default class  clubic extends Component {
+  render(){
+    return(
       <View>
-    <TouchableHighlight onPress={() => this.props.navigation.navigate("cert")}>
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
-            style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={3}
-          >
-            <Text style ={styles.imgtext}>Event Certificates</Text>
-            </ImageBackground>
-            </TouchableHighlight>
-            <TouchableHighlight onPress={() => this.props.navigation.navigate("workshop")}>
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
-            style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
-          >
-            <Text style ={styles.imgtext}>Request a Workshop/Event</Text>
-            </ImageBackground>
-            </TouchableHighlight>
-            </View>
+  <TouchableHighlight  >
+    {/* onPress={this.}>  */}
+        <ImageBackground source={{uri: 'https://raw.githubusercontent.com/tewarig/Geu-AcmApp-Web/master/Letcode.jpeg' }}
+        style={styles.manimg} imageStyle={{ borderRadius: 25 }}
+      >
+
+        </ImageBackground>
+        </TouchableHighlight>
+  <TouchableHighlight  >
+    {/* onPress={this.}>  */}
+        <ImageBackground source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS17018rElLcAWAKqGLXin8qhExzNaE7l5R9rLOUp_0MmWABE1x' }}
+        style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2}
+      >
+      <Text style={styles.imgtext}>Start Your Own CLub </Text>
+        </ImageBackground>
+        </TouchableHighlight>
+
+     </View>
     )
   }
 }
+
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#f7f7f0",
+    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center"
   } ,

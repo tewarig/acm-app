@@ -6,7 +6,7 @@ export default class study extends Component {
   render() {
     return (
       <View>
-      <TouchableHighlight style={styles.backimg} onPress={() => navigation.navigate("notes")}>
+      <TouchableHighlight style={styles.backimg} onPress={() => this.props.navigation.navigate("notes")}>
             <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
             style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={4}
           >
@@ -14,7 +14,7 @@ export default class study extends Component {
             </ImageBackground>
             </TouchableHighlight>
 
-            <TouchableHighlight style={styles.backimg}onPress={() => navigation.navigate("ebooks")}>
+            <TouchableHighlight style={styles.backimg}onPress={() => this.props.navigation.navigate("ebook")}>
             <ImageBackground source={{uri: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
             style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
           >
