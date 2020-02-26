@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, View, Text ,StyleSheet , TouchableHighlight ,Image , ImageBackground ,WebView } from 'react-native';
+import { Button, View, Text ,StyleSheet , TouchableHighlight ,Image , ImageBackground ,WebView ,Linking} from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export default class study extends Component {
@@ -22,7 +22,7 @@ export default class study extends Component {
             </ImageBackground>
 
           </TouchableHighlight>
-          <TouchableHighlight style={styles.backimg}onPress={() => this.props.navigation.navigate("summit")}>
+          <TouchableHighlight style={styles.backimg}onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSc_8yGZIQzjarUgLkJHJQv5zyPWQrJL5x4lnht19xyPw7ONig/viewform?usp=sf_link')}>
           <ImageBackground source={require('../images/img2.jpeg')}
           style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
         >

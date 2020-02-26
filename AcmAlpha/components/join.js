@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, View, Text ,StyleSheet , TouchableHighlight ,Image , ImageBackground  } from 'react-native';
+import { Button, View, Text ,StyleSheet , TouchableHighlight ,Image , ImageBackground ,Linking } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export default class join extends Component {
@@ -7,7 +7,7 @@ export default class join extends Component {
     return (
       <View style={styles.container}>
 
-   <TouchableHighlight style={styles.backimg}onPress={() => this.props.navigation.navigate("joinACM")}>
+   <TouchableHighlight style={styles.backimg}onPress={() => Linking.openURL('mailto:geuacm@gmail.com?subject=joinacm&body=name: <br> mobileno: <br>sem:<br>course:<br>section')}>
    <ImageBackground source={require('../images/img1.jpeg')}
    style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
  >
@@ -16,13 +16,7 @@ export default class join extends Component {
  </TouchableHighlight>
 
 
-          <TouchableHighlight style={styles.backimg}onPress={() => this.props.navigation.navigate("joinSIG")}>
-          <ImageBackground source={require('../images/img2.jpeg')}
-          style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
-        >
-          <Text style ={styles.imgtext}> Join Acm SIG</Text>
-          </ImageBackground>
-        </TouchableHighlight>
+        
         <View>
 
         </View>

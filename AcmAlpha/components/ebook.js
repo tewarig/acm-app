@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, View, Text ,StyleSheet , TouchableHighlight ,Image , ImageBackground ,ActivityIndicator } from 'react-native';
+import { Button, View, Text ,StyleSheet , TouchableHighlight ,Image , ImageBackground ,ActivityIndicator , } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { WebView } from 'react-native-webview';
 
@@ -25,7 +25,7 @@ export default class ebook extends Component {
          onLoadStart={() => (this.showSpinner())}
          onLoad={() => this.hideSpinner()}
          style={{ flex: 1 }}
-         source={{ uri: "http://tewarig.github.io/stuff/study.html" }}
+         source={{ uri: "http://tewarig.github.io/stuff/ebook.html" }}
        />
        {this.state.visible && (
          <ActivityIndicator

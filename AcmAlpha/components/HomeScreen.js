@@ -1,7 +1,7 @@
 // Homescreen.js
 import React, { Component } from 'react';
 import { StyleSheet, Text, View ,Image , AppRegistry, Dimensions , ScrollView  ,ImageBackground ,Button ,  TouchableHighlight,ActivityIndicator
-} from "react-native";
+,Linking} from "react-native";
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { SliderBox } from "react-native-image-slider-box";
 
@@ -12,9 +12,9 @@ export default class Homescreen extends Component {
   this.state = {
     images: [
       "https://raw.githubusercontent.com/tewarig/Geu-AcmApp-Web/master/review.gif",
-      "https://source.unsplash.com/1024x768/?water",
-      "https://source.unsplash.com/1024x768/?girl",
-      "https://source.unsplash.com/1024x768/?tree", // Network image
+      "https://raw.githubusercontent.com/tewarig/stuff/master/poster.jpeg?token=ANC2BP7FXN5WTRQIEKRM2GK6L62WM",
+      "https://raw.githubusercontent.com/tewarig/stuff/master/gravity.jpeg?token=ANC2BP5P6XRY7TX56AYGJZC6L62Z6",
+       // Network image
       // require('./assets/images/girl.jpg'),         // Local image
     ]
   };
@@ -65,7 +65,7 @@ export default class Homescreen extends Component {
             </ImageBackground>
             </TouchableHighlight>
 
-                <TouchableHighlight onPress={() => this.props.navigation.navigate("feedback")}>
+                <TouchableHighlight onPress={() => Linking.openURL('mailto:geuacm@gmail.com?subject=Feedback')}>
                 <ImageBackground source={require('../images/img6.jpg')}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
@@ -78,7 +78,7 @@ export default class Homescreen extends Component {
                 <ImageBackground source={require('../images/img5.jpeg')}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
-                <Text style ={styles.imgtext}>Clubs in collage</Text>
+                <Text style ={styles.imgtext}>Clubs in college</Text>
                 </ImageBackground>
               </TouchableHighlight>
 

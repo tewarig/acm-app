@@ -21,7 +21,7 @@ export default class notes extends Component {
    return (
      <View style={{ flex: 1 }}>
        <WebView
-         hasZoom={false}
+
          onLoadStart={() => (this.showSpinner())}
          onLoad={() => this.hideSpinner()}
          style={{ flex: 1 }}
