@@ -28,7 +28,7 @@ export default class Homescreen extends Component {
   <TouchableHighlight onPress={() => this.props.navigation.navigate("join")}>
           {/* onPress={this.}>  */}
 
-              <ImageBackground source={require('../images/img1.jpeg')}
+              <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
               style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={3}
             >
               <Text style ={styles.imgtext}>Join us!!</Text>
@@ -36,7 +36,7 @@ export default class Homescreen extends Component {
               </TouchableHighlight>
 
                 <TouchableHighlight onPress={() => this.props.navigation.navigate("study")}>
-                <ImageBackground source={require('../images/img2.jpeg')}
+                <ImageBackground source={{uri: 'https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>Study Material</Text>
@@ -44,29 +44,22 @@ export default class Homescreen extends Component {
               </TouchableHighlight>
 
                 <TouchableHighlight onPress={() => this.props.navigation.navigate("coding")}>
-                <ImageBackground source={require('../images/omg3.jpeg')}
+                <ImageBackground source={{uri: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>Learn coding</Text>
                 </ImageBackground>
                 </TouchableHighlight>
                 <TouchableHighlight onPress={() => this.props.navigation.navigate("events")}>
-                <ImageBackground source={require('../images/om4.jpeg')}
+                <ImageBackground source={{uri: 'https://images.pexels.com/photos/953847/pexels-photo-953847.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>Events</Text>
                 </ImageBackground>
               </TouchableHighlight>
-              <TouchableHighlight onPress={() => this.props.navigation.navigate("internship")}>
-            <ImageBackground source={require('../images/img5.jpeg')}
-            style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
-          >
-            <Text style ={styles.imgtext}>Interships </Text>
-            </ImageBackground>
-            </TouchableHighlight>
 
                 <TouchableHighlight onPress={() => this.props.navigation.navigate("feedback")}>
-                <ImageBackground source={require('../images/img6.jpg')}
+                <ImageBackground source={{uri: 'https://images.pexels.com/photos/17845/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>Feedback</Text>
@@ -74,8 +67,8 @@ export default class Homescreen extends Component {
               </TouchableHighlight>
 
 
-                <TouchableHighlight onPress={() => this.props.navigation.navigate("clubs")}>
-                <ImageBackground source={require('../images/img5.jpeg')}
+                <TouchableHighlight onPress={() => this.props.navigation.navigate("clubic")}>
+                <ImageBackground source={{uri: 'https://images.pexels.com/photos/953847/pexels-photo-953847.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>Clubs in collage</Text>
@@ -84,13 +77,12 @@ export default class Homescreen extends Component {
 
 
                   <TouchableHighlight onPress={() => this.props.navigation.navigate("About")}>
-                <ImageBackground source={require('../images/img1.jpeg')}
+                <ImageBackground source={{uri: 'https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>About </Text>
                 </ImageBackground>
                 </TouchableHighlight>
-
 
               </View>
    </ScrollView>

@@ -7,8 +7,8 @@ export default class join extends Component {
     return (
       <View style={styles.container}>
 
-   <TouchableHighlight style={styles.backimg}onPress={() => navigation.navigate("Soon")}>
-   <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
+   <TouchableHighlight style={styles.backimg}onPress={() => this.props.navigation.navigate("joinACM")}>
+   <ImageBackground source={require('../images/img1.jpeg')}
    style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
  >
    <Text style ={styles.imgtext}> Join Acm </Text>
@@ -16,8 +16,8 @@ export default class join extends Component {
  </TouchableHighlight>
 
 
-          <TouchableHighlight style={styles.backimg}onPress={() => navigation.navigate("Soon")}>
-          <ImageBackground source={{uri: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
+          <TouchableHighlight style={styles.backimg}onPress={() => this.props.navigation.navigate("joinSIG")}>
+          <ImageBackground source={require('../images/img2.jpeg')}
           style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
         >
           <Text style ={styles.imgtext}> Join Acm SIG</Text>

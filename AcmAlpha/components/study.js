@@ -7,7 +7,7 @@ export default class study extends Component {
     return (
       <View>
       <TouchableHighlight style={styles.backimg} onPress={() => this.props.navigation.navigate("notes")}>
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
+            <ImageBackground source={require('../images/img1.jpeg')}
             style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={4}
           >
             <Text style ={styles.imgtext}>Notes</Text>
@@ -15,12 +15,21 @@ export default class study extends Component {
             </TouchableHighlight>
 
             <TouchableHighlight style={styles.backimg}onPress={() => this.props.navigation.navigate("ebook")}>
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
+            <ImageBackground source={require('../images/img5.jpeg')}
             style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
           >
             <Text style ={styles.imgtext}>E-books </Text>
             </ImageBackground>
+
           </TouchableHighlight>
+          <TouchableHighlight style={styles.backimg}onPress={() => this.props.navigation.navigate("summit")}>
+          <ImageBackground source={require('../images/img2.jpeg')}
+          style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
+        >
+          <Text style ={styles.imgtext}>Summit Your Notes </Text>
+          </ImageBackground>
+
+        </TouchableHighlight>
           </View>
 
 

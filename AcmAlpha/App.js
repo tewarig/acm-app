@@ -11,11 +11,21 @@ import study from './components/study';
 import coding from './components/coding';
 import events from './components/events';
 import feedback from './components/feedback';
-import clubic from './components/clubic';
 import notes from './components/notes';
 import ebook from './components/ebook';
 import certificates from './components/certificates';
 import workshop from './components/workshop';
+import joinACM from './components/joinACM';
+import joinSIG from './components/joinSIG';
+import team from './components/team';
+import recent from './components/recent';
+import internship from './components/internship';
+import clubs from './components/clubs';
+import yash from './components/Yash_Arora';
+import gaurav from './components/gaurav';
+import noobtodev from './components/NoobtoDev';
+import github from './components/github';
+import summit from './components/summit';
 
 export default class App extends React.Component {
   render() {
@@ -46,7 +56,7 @@ const AppNavigator = createStackNavigator({
     screen: feedback
   },
   clubs: {
-    screen: clubic
+    screen: clubs
   },
   notes: {
     screen: notes
@@ -54,12 +64,42 @@ const AppNavigator = createStackNavigator({
   ebook: {
     screen: ebook
   },
-  
+
   workshop :{
     screen: workshop
   },
   certificates:{
     screen: certificates
+  },
+  joinACM:{
+    screen: joinACM
+  },
+  joinSIG:{
+    screen:joinSIG
+  },
+  team: {
+    screen: team
+  },
+  recent:{
+    screen:recent
+  },
+  internship:{
+    screen:internship
+  },
+  Yash_Arora:{
+    screen: yash
+  },
+  gaurav: {
+    screen:gaurav
+  },
+  NoobtoDev: {
+    screen: noobtodev
+  },
+  github: {
+    screen: github
+  },
+  summit: {
+    screen:summit
   }
 
 

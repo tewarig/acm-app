@@ -7,19 +7,26 @@ export default class events extends Component {
     return (
       <View>
     <TouchableHighlight onPress={() => this.props.navigation.navigate("certificates")}>
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' }}
+            <ImageBackground source={require('../images/img1.jpeg')}
             style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={3}
           >
             <Text style ={styles.imgtext}>Event Certificates</Text>
             </ImageBackground>
             </TouchableHighlight>
             <TouchableHighlight onPress={() => this.props.navigation.navigate("workshop")}>
-            <ImageBackground source={{uri: 'https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }}
+            <ImageBackground source={require('../images/mario.jpeg')}
             style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
           >
             <Text style ={styles.imgtext}>Request a Workshop/Event</Text>
             </ImageBackground>
             </TouchableHighlight>
+            <TouchableHighlight onPress={() => this.props.navigation.navigate("recent")}>
+            <ImageBackground source={require('../images/om4.jpeg')}
+            style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
+          >
+            <Text style ={styles.imgtext}>Recent Events</Text>
+            </ImageBackground>
+          </TouchableHighlight>
             </View>
     )
   }
