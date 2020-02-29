@@ -1,12 +1,10 @@
-
 import React, { Component } from 'react';
-
 import { Button, View, Text ,StyleSheet , TouchableHighlight ,Image , ImageBackground ,ActivityIndicator } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { WebView } from 'react-native-webview';
 
 
-export default class clubs extends Component {
+export default class research extends Component {
   constructor(props) {
    super(props);
    this.state = { visible: true };
@@ -26,7 +24,7 @@ export default class clubs extends Component {
          onLoadStart={() => (this.showSpinner())}
          onLoad={() => this.hideSpinner()}
          style={{ flex: 1 }}
-         source={{ uri: 'http://tewarig.github.io/stuff/clubs.html' }}
+         source={{ uri: 'https://tewarig.github.io/stuff/research' }}
        />
        {this.state.visible && (
          <ActivityIndicator

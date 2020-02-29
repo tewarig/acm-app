@@ -26,6 +26,9 @@ import gaurav from './components/gaurav';
 import noobtodev from './components/NoobtoDev';
 import github from './components/github';
 import summit from './components/summit';
+import feeback from './components/Feedback';
+import reseach from './components/Research';
+
 
 export default class App extends React.Component {
   render() {
@@ -89,6 +92,9 @@ const AppNavigator = createStackNavigator({
   Yash_Arora:{
     screen: yash
   },
+  Feedback:{
+    screen:feedback
+  },
   gaurav: {
     screen:gaurav
   },
@@ -100,7 +106,10 @@ const AppNavigator = createStackNavigator({
   },
   summit: {
     screen:summit
-  }
+  },
+  Research: {
+    screen: reseach
+  },
 
 
 });

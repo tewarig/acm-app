@@ -42,6 +42,13 @@ export default class Homescreen extends Component {
                 <Text style ={styles.imgtext}>Study Material</Text>
                 </ImageBackground>
               </TouchableHighlight>
+              <TouchableHighlight onPress={() => this.props.navigation.navigate("Research")}>
+            <ImageBackground source={require('../images/p1.jpg')}
+            style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
+          >
+            <Text style ={styles.imgtext}>Research </Text>
+            </ImageBackground>
+            </TouchableHighlight>
 
                 <TouchableHighlight onPress={() => this.props.navigation.navigate("coding")}>
                 <ImageBackground source={require('../images/omg3.jpeg')}
@@ -75,7 +82,7 @@ export default class Homescreen extends Component {
 
 
                 <TouchableHighlight onPress={() => this.props.navigation.navigate("clubs")}>
-                <ImageBackground source={require('../images/img5.jpeg')}
+                <ImageBackground source={require('../images/p1.jpg')}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>Clubs in college</Text>
