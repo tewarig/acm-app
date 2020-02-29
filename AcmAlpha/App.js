@@ -7,9 +7,9 @@ import { createAppContainer } from "react-navigation";
 import HomeScreen from './components/HomeScreen';
 import About from './components/About';
 import join from './components/join';
-import study from './components/study';
-import coding from './components/coding';
-import events from './components/events';
+import study from './components/Study';
+import coding from './components/Coding';
+import events from './components/Events';
 import feedback from './components/feedback';
 import notes from './components/notes';
 import ebook from './components/ebook';
@@ -19,8 +19,8 @@ import joinACM from './components/joinACM';
 import joinSIG from './components/joinSIG';
 import team from './components/team';
 import recent from './components/recent';
-import internship from './components/internship';
-import clubs from './components/clubs';
+import internship from './components/Internship';
+import clubs from './components/Clubs';
 import yash from './components/Yash_Arora';
 import gaurav from './components/gaurav';
 import noobtodev from './components/NoobtoDev';
@@ -46,19 +46,19 @@ const AppNavigator = createStackNavigator({
   join: {
     screen: join
   },
-  study: {
+  Study: {
     screen: study
   },
-  coding: {
+  Coding: {
     screen: coding
   },
-  events: {
+  Events: {
     screen: events
   },
   feedback: {
     screen: feedback
   },
-  clubs: {
+  Clubs: {
     screen: clubs
   },
   notes: {
@@ -86,7 +86,7 @@ const AppNavigator = createStackNavigator({
   recent:{
     screen:recent
   },
-  internship:{
+  Internship:{
     screen:internship
   },
   Yash_Arora:{

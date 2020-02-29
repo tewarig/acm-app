@@ -30,6 +30,15 @@ export default class study extends Component {
           </ImageBackground>
 
         </TouchableHighlight>
+        <TouchableHighlight style={styles.backimg}onPress={() => Linking.openURL('https://github.com/tewarig/acm-app/issues')}>
+        <ImageBackground source={require('../images/p1.jpg')}
+        style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
+      >
+        <Text style ={styles.imgtext}>Report a Issue </Text>
+        <Text style={styles.imgtextq}>Get Goodies</Text>
+        </ImageBackground>
+
+      </TouchableHighlight>
           </View>
 
 
@@ -122,6 +131,12 @@ const styles = StyleSheet.create({
 imgtext:{
   color: '#fff' ,
   fontSize: 24 ,
+  textAlign: 'left' ,
+  fontWeight: 'bold',
+} ,
+imgtextq:{
+  color: '#fff' ,
+  fontSize: 17 ,
   textAlign: 'left' ,
   fontWeight: 'bold',
 } ,

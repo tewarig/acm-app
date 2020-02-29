@@ -35,7 +35,7 @@ export default class Homescreen extends Component {
               </ImageBackground>
               </TouchableHighlight>
 
-                <TouchableHighlight onPress={() => this.props.navigation.navigate("study")}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate("Study")}>
                 <ImageBackground source={require('../images/img2.jpeg')}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
@@ -50,21 +50,21 @@ export default class Homescreen extends Component {
             </ImageBackground>
             </TouchableHighlight>
 
-                <TouchableHighlight onPress={() => this.props.navigation.navigate("coding")}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate("Coding")}>
                 <ImageBackground source={require('../images/omg3.jpeg')}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>Learn coding</Text>
                 </ImageBackground>
                 </TouchableHighlight>
-                <TouchableHighlight onPress={() => this.props.navigation.navigate("events")}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate("Events")}>
                 <ImageBackground source={require('../images/om4.jpeg')}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
                 <Text style ={styles.imgtext}>Events</Text>
                 </ImageBackground>
               </TouchableHighlight>
-              <TouchableHighlight onPress={() => this.props.navigation.navigate("internship")}>
+              <TouchableHighlight onPress={() => this.props.navigation.navigate("Internship")}>
             <ImageBackground source={require('../images/img5.jpeg')}
             style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
           >
@@ -81,7 +81,7 @@ export default class Homescreen extends Component {
               </TouchableHighlight>
 
 
-                <TouchableHighlight onPress={() => this.props.navigation.navigate("clubs")}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate("Clubs")}>
                 <ImageBackground source={require('../images/p1.jpg')}
                 style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
               >
