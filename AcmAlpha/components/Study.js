@@ -26,7 +26,7 @@ export default class study extends Component {
           <ImageBackground source={require('../images/img2.jpeg')}
           style={styles.backimg} imageStyle={{ borderRadius: 25 }} blurRadius={2.1}
         >
-          <Text style ={styles.imgtext}>Summit Your Notes </Text>
+          <Text style ={styles.imgtext}>Submit Your Notes </Text>
           </ImageBackground>
 
         </TouchableHighlight>
